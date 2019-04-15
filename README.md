@@ -2,6 +2,10 @@
 
 ## Usage Examples ##
 
+Get help
+
+    :help pipenv_ycm
+    
 See pipenv graph
 
     :PipenvYcm graph
