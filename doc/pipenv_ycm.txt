@@ -1,0 +1,31 @@
+*pipenv_ycm.txt* Manage and activate pipenv from within Vim
+
+Author: Rafael Hautekiet <rafaelhautekiet@gmail.com>   *pipenv-ycm_author*
+License: Same terms as Vim itself (see |license|)
+
+INTRODUCTION                                        *pipenv-ycm* *pipenv_ycm.vim*
+
+The pipenv_ycm plugin allows you to manage pipenv from within a Vim session,
+and will inform [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) about the correct python binary to use
+
+COMMANDS                                            *pipenv-ycm-commands*
+
+:PipenvYcm [COMMAND]                                   *:PipenvYcm*
+    Without providing a command: activate venv of current buffer
+    "enable" Activate pipenv venv
+    "disable" Deactivate pipenv venv
+    Otherwise, send a pipenv command. The output will be displayed in Vim.
+
+CONFIGURATION                                       *pipenv-ycm-configuration*
+
+g:pipenv_ycm_default_python                              *g:pipenv_ycm_default_python*
+    By default set to  `g:ycm_python_binary_path`, `python3` or `python`
+
+g:pipenv_ycm_auto_activate                              *g:pipenv_ycm_auto_activate*
+    If set to 1 (default), an attempt will be made to activate the pipenv venv.
+
+g:pipenv_ycm_auto_switch                                *g:pipenv_ycm_auto_switch*
+    If set to 1 (default), an attempt will be made automatically switch venvs
+    when opening a new file.
+
+vim:tw=78:et:ft=help:norl:
