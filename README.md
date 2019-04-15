@@ -2,30 +2,22 @@
 
 ## Usage Examples ##
 
-Get help
+See pipenv graph
 
-    :help pipenv-ycm
+    :PipenvYcm graph
 
-See pipenv-ycm graph
+As an example, install & lock `python-openctm` in dev packages
 
-    :Pipenv-ycm graph
-
-Install & lock `pyyaml` in dev packages
-
-    :Pipenv-ycm install pyyaml --dev
+    :PipenvYcm install python-openctm --dev
 
 Activate Pipenv venv for current file
 
-    :Pipenv-ycm
-
-`:Pvv` is provided as alias for `:Pipenv-ycm`
-
+    :PipenvYcm
 
 Use \<tab\> to switch between available commands.
 
 ### Installing ###
-vim-pipenv-ycm depends on the [YouCompleteMe](https://github.com/Valloric/YouCompleteMe):
-make sure you install it too (or just follow guidelines bellow to install both at the same time)
+vim-pipenv-ycm depends on [YouCompleteMe](https://github.com/Valloric/YouCompleteMe):
 
 #### Using pathogen ####
 First make sure you have [Pathogen](https://github.com/tpope/vim-pathogen), then
